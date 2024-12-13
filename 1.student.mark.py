@@ -37,8 +37,8 @@ def inputMarks(students, courses, marks):
         marks[course] = {}
     listStudents(students)
     print("Enter the student id to input mark: ")
-    student = input()
-    marks[course][student] = float(input("Enter mark: "))
+    students = input()
+    marks[course][students] = float(input("Enter mark: "))
     return marks
 def showMarks(students, marks):
     course = input("What course do you want to see ?: ")
@@ -74,7 +74,7 @@ while (True):
     elif (choice == 4):
         listStudents(students)
     elif (choice == 5):
-        marks = inputMarks(students,courses, marks)
+        marks = inputMarks(students, courses, marks)
     elif (choice == 6):
         showMarks(students, marks)
     else:
